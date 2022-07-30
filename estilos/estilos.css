@@ -1,0 +1,215 @@
+/* este receteo es importante */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family:'Roboto', sans-serif;
+}
+header{
+    background-color: white;
+    padding: 25px;
+    margin-top: 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    max-width: 6rem;
+    max-height: 6rem;
+    margin-left: 10rem;
+    margin-bottom: 0;
+}
+
+nav{
+    width: 100%;
+    
+}
+
+.hover:hover {
+    font-weight: bold;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul li{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.5rem;
+    border-bottom: 1rem;
+   
+    
+}
+header i{
+    justify-content: flex-end;
+    margin-right:1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.mainImage{
+    margin-top: 1rem;
+    width:170rem ;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+}
+.title{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 9rem;
+    font-weight: bold;
+    
+}
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:4rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    justify-items: center;
+}
+
+.productos img{
+    width:368px ;
+    height: 433px;
+    margin-bottom:1rem;
+}
+.detalleprod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+.detalleprod p{
+    font-size: medium;
+    margin-bottom: 1rem;
+}
+
+.precio{
+    font-weight: bold;
+    font-size: large;
+    
+}
+footer{
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid black;
+    margin-top: 10px;
+}  
+.flexContainer{
+    display: flex;
+    height: 50px;
+    align-items: center; 
+    list-style-type:none ;
+    justify-content: center;
+    
+}
+.flexContainer li{
+    padding: 2rem;
+}
+.flexContainer ul{
+    width: 100%;
+    
+}
+.redes{
+    max-width: 30px;
+    max-height: 30px;
+}
+.nosotros h2{
+    grid-area: titulo;
+    font-size: 5rem;
+}
+.nosotros p{
+    grid-area: info;
+    font-size: 2rem;
+}
+.nosotros .divisor{
+    grid-area: divisor;
+}
+.nosotros img{
+    grid-area: imagen;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    grid-area: divisor;
+}
+.nosotros{
+    align-items:start;
+    margin-top: 10rem;
+    display: grid;
+    grid-template-areas: 
+    "titulo imagen"
+    "divisor imagen"
+    "info imagen";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 10% 80%;
+    text-align: justify;
+    margin-left: 50rem;
+    margin-bottom: 10rem;
+}
+.logoContacto{
+    width: 50rem;
+    height: 50rem;
+    margin-left: 1rem;
+}
+.contactanos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    height: 35rem;
+    width:30rem ;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    
+}
+.contactanos h1{
+    font-size: 5rem;
+}
+.contactanos article{
+    font-size: 2rem;
+}
+.titleProdDest{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}
+.prodDest img{
+    width:368px ;
+    height: 433px;
+    margin-bottom:1rem;
+}
+.prodDest{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr ;
+    gap:4rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    justify-items: center;
+}
