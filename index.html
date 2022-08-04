@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/style.css">
     <script src="https://kit.fontawesome.com/5aa0dc6fd4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -11,87 +11,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
-
-<body>
-    <!-- Nav Bar -->
-    <header class="header">
-        <img src="./images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="logo">
-        <nav>
-            <ul>
-                <li class="hover">
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li class="hover">
-                    <a href="./secciones/productos.html">Productos</a>
-                </li>
-                <li class="hover">
-                    <a href="./secciones/nosotros.html">Nosotros</a>
-                </li>
-                <li class="hover">
-                    <a href="./secciones/contacto.html">Contacto</a>
-                </li>
-                
-            </ul>
-        </nav>
-        <i class="fa-solid fa-heart fa-2xl"></i>
-        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <i class="material-icons">account_box</i>
-
-    </header>
-    <!-- Cuerpo Pag -->
-    <main>
-        <img src="./images/1-slide-1620187672113-4286385282-35e3225487894f916e378270df53bba01620187746-1400-1400.jpg" alt="imagen de dos buzos, uno negro y uno blanco" class="mainImage" >
-    </main>
-    <section class="titleProdDest">
-        <h2>Productos Destacados</h2>
-    </section>
-    <section class="prodDest">
-        <div class="detalleprod">
-            <img src="./images/productos/E6437_1.jpg" alt="Buzo Loyd Forro Polar Light Grey Melange">
-            <p>Loyd Forro Polar Light Grey Melange</p>
-            <p class="precio">$12000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-                </span>
-        </div>
-        <div class="detalleprod">
-            <img src="./images/productos/F0785_01_F4Nb488.jpg" alt="Buzo Pile Forro Polar Phantom">
-            <p>Pile Forro Polar Phantom</p>
-            <p class="precio">$15000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-                </span>
-        </div>
-        <div class="detalleprod">
-            <img src="./images/productos/F0786_01_OAnW47E.jpg" alt="Buzo Pile Forro Polar Olive Green">
-            <p>Pile Forro Polar Olive Green</p>
-            <p class="precio">$20000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-                </span>
-        </div>
-
-    </section>
-    <section>
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-63e92782-17e1-45e9-bb32-dfa4200464cc"></div>
-    </section>
-
-
+<div class="gridContent">
+    <body>
+        <!-- Nav Bar -->
+        <header class="header">
+            <img src="./images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="logo">
+            <nav class="myLinks">
+                <ul>
+                    <li class="hover">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="hover">
+                        <a href="./secciones/productos.html">Productos</a>
+                    </li>
+                    <li class="hover">
+                        <a href="./secciones/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="hover">
+                        <a href="./secciones/contacto.html">Contacto</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <i class="fa-solid fa-heart fa-2xl"></i>
+            <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+            <i class="material-icons">account_box</i>
     
-    <!-- Pie de Pagina -->
-    <footer >
-        <ul class="flexContainer">
-            <li>
-                <img src="./images/icons8-facebook.svg" alt="iconoFacebook" class="redes">
-            </li>
-            <li>
-                <img src="./images/icons8-instagram.svg" alt="iconoInstagram" class="redes">
-            </li>
-        </ul>
+        </header>
+        <!-- Cuerpo Pag -->
+        <main class="mainImg">
+            <img src="./images/1-slide-1620187672113-4286385282-35e3225487894f916e378270df53bba01620187746-1400-1400.jpg" alt="imagen de dos buzos, uno negro y uno blanco" class="mainImage" >
+        </main>
+        <div class="productosDestacados">
+            <section class="titleProdDest">
+                <h2>Productos Destacados</h2>
+            </section>
+            <section class="prodDest">
+                <div class="detalleprod">
+                    <img src="./images/productos/E6437_1.jpg" alt="Buzo Loyd Forro Polar Light Grey Melange">
+                    <p>Loyd Forro Polar Light Grey Melange</p>
+                    <p class="precio">$12000</p>
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                        </span>
+                </div>
+                <div class="detalleprod">
+                    <img src="./images/productos/F0785_01_F4Nb488.jpg" alt="Buzo Pile Forro Polar Phantom">
+                    <p>Pile Forro Polar Phantom</p>
+                    <p class="precio">$15000</p>
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                        </span>
+                </div>
+                <div class="detalleprod">
+                    <img src="./images/productos/F0786_01_OAnW47E.jpg" alt="Buzo Pile Forro Polar Olive Green">
+                    <p>Pile Forro Polar Olive Green</p>
+                    <p class="precio">$20000</p>
+                    <span class="material-symbols-outlined">
+                        add_shopping_cart
+                        </span>
+                </div>
         
+            </section> 
+        </div>
         
-    </footer>
-</body>
+        <section class="ig">
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-63e92782-17e1-45e9-bb32-dfa4200464cc"></div>
+        </section>
+    
+    
+    
+        
+        <!-- Pie de Pagina -->
+        <footer class="footer">
+            <ul class="flexContainer">
+                <li>
+                    <img src="./images/icons8-facebook.svg" alt="iconoFacebook" class="redes">
+                </li>
+                <li>
+                    <img src="./images/icons8-instagram.svg" alt="iconoInstagram" class="redes">
+                </li>
+            </ul>
+            
+            
+        </footer>
+    </body>
+</div>
+
 
 </html>

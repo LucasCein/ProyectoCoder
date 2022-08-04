@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*mobile*/
+.header{
+    grid-area: "headerArea";
+}
+
+.mainImg{
+    grid-area: "mainImgArea";
+}
+
+.productosDestacados{
+    grid-area: "prodDestArea";
+}
+
+.ig{
+    grid-area: "igArea";
+}
+.footer{
+    grid-area: "footerArea";
+}
+@media only screen and (min-widht:0px) and (max-widht:767px){
+    .gridContent{
+        display: grid;
+        grid-template-areas:
+        "headerArea"
+        "mainImgArea"
+        "prodDestArea"
+        "igArea"
+        "footerArea"
+        ;
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    }
+    .header{
+        overflow: hidden;
+        background-color: #fff;
+        position: relative;
+    }
+    .header .myLinks{
+        display: none;
+    }
+    
+
+}
