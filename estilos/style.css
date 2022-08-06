@@ -1,49 +1,258 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins:wght@200&family=Roboto:wght@100&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
 
 /*mobile*/
-.header{
-    grid-area: "headerArea";
+
+/* .gridContent {
+    display: grid;
+   width: fit-content;
+}  */
+
+header {
+    margin-bottom: 20px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    background: white;
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    max-width: 4rem;
+    max-height: 4rem;
+    margin-left: 3rem;
+    margin-top: 1.5rem;
+    
+
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: black;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    float: right;
+    margin-top:1rem ;
+}
+
+#check {
+    display: none;
+}
+
+.checkbtn {
+    display: block;
+}
+
+nav ul {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    margin-top: 5px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    margin-top: -40px;
+}
+
+nav ul li {
+    display: block;
+    margin:50px 0;
+    line-height: 30px;
+
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color:gray;
+}
+#check:checked~ul {
+    left: 0;
+
+}
+.iconsNav{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 800,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 .mainImg{
-    grid-area: "mainImgArea";
+    display: flex;
+    justify-content: center;
 }
-
-.productosDestacados{
-    grid-area: "prodDestArea";
+.mainImg img{
+    width: 100%;
+    height: 300px;
+    margin-top: 0;
 }
-
-.ig{
-    grid-area: "igArea";
+.titleProdDest{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
 }
-.footer{
-    grid-area: "footerArea";
+.prodDest img{
+    width:268px ;
+    height: 333px;
+    margin-bottom:1rem;
 }
-@media only screen and (min-widht:0px) and (max-widht:767px){
-    .gridContent{
-        display: grid;
-        grid-template-areas:
-        "headerArea"
-        "mainImgArea"
-        "prodDestArea"
-        "igArea"
-        "footerArea"
-        ;
-        grid-template-columns: 1fr;
-        grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
-    }
-    .header{
-        overflow: hidden;
-        background-color: #fff;
-        position: relative;
-    }
-    .header .myLinks{
-        display: none;
-    }
+.prodDest{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap:2rem;
+    justify-items: center;
+}
+.detalleprod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
+}
+.detalleprod p{
+    font-size: medium;
+} 
+footer{
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid black;
+    margin-top: 10px;
+}  
+.flexContainer{
+    display: flex;
+    height: 50px;
+    align-items: center; 
+    list-style-type:none ;
+    justify-content: center;
+    
+}
+.flexContainer li{
+    padding: 2rem;
+}
+.flexContainer ul{
+    width: 100%;
+    
+}
+.redes{
+    max-width: 30px;
+    max-height: 30px;
+}
 
+.title{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    font-weight: bold;
+    
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:1rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-items: center;
+}
+.productos img{
+    width:168px ;
+    height: 233px;
+    margin-bottom:1rem;
+}
+.detalleprod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.detalleprod p{
+    font-size: medium;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+.precio{
+    font-weight: bold;
+    font-size: large;
+    
+}
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.nosotros h2{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.nosotros p{
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+.subtitle{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
 }
