@@ -21,7 +21,7 @@ header {
     height: 80px;
     width: 100%;
     border-bottom: 1px solid black;
-    
+
 }
 
 body {
@@ -33,7 +33,7 @@ body {
     max-height: 4rem;
     margin-left: 3rem;
     margin-top: 1.5rem;
-    
+
 
 }
 
@@ -44,7 +44,7 @@ body {
     margin-right: 40px;
     cursor: pointer;
     float: right;
-    margin-top:1rem ;
+    margin-top: 1rem;
 }
 
 #check {
@@ -69,7 +69,7 @@ nav ul {
 
 nav ul li {
     display: block;
-    margin:50px 0;
+    margin: 50px 0;
     line-height: 30px;
 
 }
@@ -78,169 +78,190 @@ nav ul li a {
     font-size: 20px;
     color: white;
     text-decoration: none;
-    
+
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     font-weight: bold;
-    color:gray;
+    color: gray;
 }
+
 #check:checked~ul {
     left: 0;
 
 }
-.iconsNav{
+
+.iconsNav {
     display: flex;
     justify-content: center;
     gap: 2rem;
 }
+
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
-}
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 800,
-  'GRAD' 0,
-  'opsz' 48
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
 }
 
-.mainImg{
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.mainImg {
     display: flex;
     justify-content: center;
 }
-.mainImg img{
+
+.mainImg img {
     width: 100%;
     height: 300px;
     margin-top: 0;
 }
-.titleProdDest{
+
+.titleProdDest {
     margin-top: 3rem;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 5rem;
 }
-.prodDest img{
-    width:268px ;
+
+.prodDest img {
+    width: 268px;
     height: 333px;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
-.prodDest{
+
+.prodDest {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap:2rem;
+    gap: 2rem;
     justify-items: center;
 }
-.detalleprod{
+
+.detalleprod {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
-.detalleprod p{
+
+.detalleprod p {
     font-size: medium;
-} 
-footer{
+}
+
+footer {
     width: 100%;
     padding: 10px;
     border-top: 1px solid black;
     margin-top: 10px;
-}  
-.flexContainer{
+}
+
+.flexContainer {
     display: flex;
     height: 50px;
-    align-items: center; 
-    list-style-type:none ;
+    align-items: center;
+    list-style-type: none;
     justify-content: center;
-    
+
 }
-.flexContainer li{
+
+.flexContainer li {
     padding: 2rem;
 }
-.flexContainer ul{
+
+.flexContainer ul {
     width: 100%;
-    
+
 }
-.redes{
+
+.redes {
     max-width: 30px;
     max-height: 30px;
 }
 
-.title{
+.title {
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: 2rem;
     font-weight: bold;
-    
+
 }
 
-.productos{
+.productos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap:1rem;
+    gap: 1rem;
     margin-left: 5px;
     margin-right: 5px;
     justify-items: center;
 }
-.productos img{
-    width:168px ;
+
+.productos img {
+    width: 168px;
     height: 233px;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
-.detalleprod{
+
+.detalleprod {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
 }
-.detalleprod p{
+
+.detalleprod p {
     font-size: medium;
     margin-bottom: 1rem;
     text-align: center;
 
 }
 
-.precio{
+.precio {
     font-weight: bold;
     font-size: large;
-    
+
 }
-.nosotros{
+
+.nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.nosotros h2{
+.nosotros h2 {
     font-size: 2rem;
     width: 100%;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.nosotros p{
+
+.nosotros p {
     font-size: 1rem;
     text-align: center;
     margin-right: 1rem;
@@ -249,10 +270,248 @@ footer{
 }
 
 
-.subtitle{
+.subtitle {
     width: 100%;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     font-weight: bold;
 }
+
+.infoNosotros {
+    list-style-type: none;
+}
+
+.flexInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.flexInfo p {
+    margin-bottom: 0;
+    margin-left: 50px;
+    font-weight: bold;
+    margin-right: 5rem;
+}
+
+.contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    height: 15rem;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.contactanos h1 {
+    font-size: 2rem;
+}
+
+.contactanos article {
+    font-size: 1rem;
+}
+
+@media(min-width:768px) {
+    .mainImg img {
+        width: 100%;
+        height: 500px;
+        margin-top: 0;
+    }
+
+    .prodDest img {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 1rem;
+    }
+
+    .prodDest {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+        justify-items: center;
+    }
+
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1rem;
+        margin-left: 5px;
+        margin-right: 5px;
+        justify-items: center;
+    }
+
+
+}
+
+@media(min-width:1024px) {
+    .logo {
+        max-width: 6rem;
+        max-height: 6rem;
+        margin-left: 10rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        float: left;
+
+    }
+
+    header {
+        background-color: white;
+
+        align-items: center;
+
+        border-bottom: 1px black solid;
+        height: auto;
+
+
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+
+    }
+
+    nav ul {
+        position: relative;
+        width: 100%;
+        height: auto;
+        left: auto;
+        background-color: white;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        margin-top: 0;
+        transition: none;
+        margin-bottom: 0;
+        gap: 200px;
+
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    nav ul li {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: inline-block;
+
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 1rem;
+
+
+
+    }
+
+    .iconsNav {
+        position: relative;
+        padding: 5px;
+
+
+    }
+
+    .mainImg {
+        
+        width: 100%;
+        
+        margin-right: 10rem;
+        margin-bottom: 1rem;
+    }
+    .mainImg img{
+        height: 500px;
+    }
+    .prodDest img{
+        width:368px ;
+        height: 433px;
+        margin-bottom:1rem;
+    }
+    .productos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap:4rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
+        justify-items: center;
+    }
+    .productos img{
+        width:368px ;
+        height: 433px;
+        margin-bottom:1rem;
+    }
+    .nosotros h2{
+        grid-area: titulo;
+        font-size: 4rem;
+    }
+    .nosotros p{
+        grid-area: info;
+        font-size: 1.5rem;
+    }
+    .nosotros .divisor{
+        grid-area: divisor;
+    }
+    .nosotros img{
+        grid-area: imagen;
+    }
+    hr {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0;
+        grid-area: divisor;
+    }
+    .nosotros{
+        align-items:start;
+        margin-top: 5rem;
+        display: grid;
+        grid-template-areas: 
+        "titulo imagen"
+        "divisor imagen"
+        "info imagen";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 10% 80%;
+        text-align: justify;
+        margin-left: 30rem;
+        margin-bottom: 1rem;
+        
+    }
+    .logoContacto{
+        width: 30rem;
+        height: 30rem;
+        margin-left: 1rem;
+    }
+    .subtitle {
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        font-weight: bold;
+        font-size:x-large;
+    }
+    .flexInfo{
+        margin-left: 10rem;
+    }
+}
+
+
+
+
+

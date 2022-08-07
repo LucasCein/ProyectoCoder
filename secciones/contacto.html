@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../estilos/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script src="https://kit.fontawesome.com/5aa0dc6fd4.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../estilos/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,27 +16,50 @@
 <body>
     <!-- Nav Bar -->
     <header class="header">
-        <img src="../images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="logo">
+        
         <nav>
-            <ul>
-                <li class="hover">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="hover">
-                    <a href="./productos.html">Productos</a>
-                </li>
-                <li class="hover">
-                    <a href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="hover">
-                    <a href="./contacto.html">Contacto</a>
-                </li>
-                
-            </ul>
+            <div class="grid">
+                <img src="../images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="logo">
+            
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul class="list">
+                    <div>
+                        <li class="hover">
+                            <a href="../index.html" class="active">Inicio</a>
+                        </li>
+                        <li class="hover">
+                            <a href="./productos.html">Productos</a>
+                        </li>
+                        <li class="hover">
+                            <a href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="hover">
+                            <a href="./contacto.html">Contacto</a>
+                        </li>
+                    </div>
+                    
+                    <div class="iconsNav"><li><span class="material-symbols-outlined">
+                        favorite
+                        </span></li>
+                        <li><span class="material-symbols-outlined">
+                            shopping_cart
+                            </span></li>
+                        <li><span class="material-symbols-outlined">
+                            account_circle
+                            </span></li>
+                    </div>
+                    
+
+                </ul>
+            </div>
+            
+            
         </nav>
-        <i class="fa-solid fa-heart fa-2xl"></i>
-        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <i class="material-icons">account_box</i>
+    
 
     </header>
 
