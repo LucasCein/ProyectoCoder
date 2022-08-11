@@ -8,6 +8,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="../estilos/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,11 +65,13 @@
     </header>
 
     <section class="nosotros">
-        <h2>Acerca del Equipo</h2>
+        <h2 data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" >Acerca del Equipo</h2>
         <hr>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ut laboriosam. Voluptates corporis alias
             mollitia voluptate quod fuga quos recusandae error fugiat autem enim natus assumenda, totam ex, architecto nam!</p>
-        <img src="../images/WhatsApp Image 2022-07-15 at 9.53.55 PM.jpeg" alt="logoEmpresa" class="logoContacto">
+        <img src="../images/WhatsApp Image 2022-07-15 at 9.53.55 PM.jpeg" alt="logoEmpresa" class="logoContacto" data-aos="fade-up-left" data-os-duration="3000">
         
         
     </section>
@@ -112,5 +116,8 @@
 
 
     </footer>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
