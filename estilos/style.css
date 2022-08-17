@@ -12,7 +12,7 @@
    width: fit-content;
 }  */
 
-header {
+/* header {
     margin-bottom: 20px;
     text-decoration: none;
     list-style: none;
@@ -22,22 +22,62 @@ header {
     width: 100%;
     border-bottom: 1px solid black;
 
+} */
+.divindex {
+    size: 3px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+    width: 50%;
+    margin: auto;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-.logo {
+.responsiveimg {
     max-width: 4rem;
     max-height: 4rem;
-    margin-left: 3rem;
-    margin-top: 1.5rem;
+}
 
+.cardInfo {
+    max-width: 10rem;
+    height: 15rem;
+    background-color: black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
-.checkbtn {
+.cardInfo img {
+    width: 140px;
+    height: 130px;
+    margin-bottom: 2rem;
+}
+
+.cardInfo .descCard {
+    color: white;
+    font-size: x-small;
+    font-weight: bold;
+
+}
+
+.cardInfo .titleCard {
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}
+
+.containerCards {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* .checkbtn {
     font-size: 30px;
     color: black;
     line-height: 80px;
@@ -80,22 +120,28 @@ nav ul li a {
     text-decoration: none;
 
 }
-
+*/
 nav ul li a:hover {
     font-weight: bold;
     color: gray;
 }
 
-#check:checked~ul {
+/* #check:checked~ul {
     left: 0;
 
+}  */
+.navcolor {
+    background-color: white;
+    min-height: 5rem
 }
 
 .iconsNav {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    list-style-type: none;
 }
+
 
 .material-symbols-outlined {
     font-variation-settings:
@@ -132,12 +178,13 @@ nav ul li a:hover {
 .mainImg {
     display: flex;
     justify-content: center;
+
 }
 
 .mainImg img {
     width: 100%;
-    height: 300px;
-    margin-top: 0;
+    min-height: 700px;
+
 }
 
 .titleProdDest {
@@ -145,7 +192,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 5rem;
-    
+
 }
 
 .prodDest img {
@@ -176,8 +223,8 @@ nav ul li a:hover {
 footer {
     width: 100%;
     padding: 10px;
-    border-top: 1px solid black;
-    margin-top: 10px;
+    border-top: 2px solid black;
+    margin-top: 0px;
 }
 
 .flexContainer {
@@ -247,11 +294,22 @@ footer {
 
 }
 
+.aboutUsPage {
+    background-image: url(../images/DSCN0240.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: auto;
+}
+
 .nosotros {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
+    
+    
 }
 
 .nosotros h2 {
@@ -259,7 +317,8 @@ footer {
     width: 100%;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: rem;
+    color: white;
 }
 
 .nosotros p {
@@ -267,7 +326,8 @@ footer {
     text-align: center;
     margin-right: 1rem;
     margin-left: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    color: white;
 }
 
 
@@ -277,17 +337,20 @@ footer {
     margin-top: 4rem;
     margin-bottom: 2rem;
     font-weight: bold;
+    color: white
 }
 
 .infoNosotros {
     list-style-type: none;
+    margin-bottom: 0;
 }
 
 .flexInfo {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    padding-bottom: 1rem;
     margin-left: 3rem;
+
 }
 
 .flexInfo p {
@@ -295,6 +358,16 @@ footer {
     margin-left: 50px;
     font-weight: bold;
     margin-right: 5rem;
+    color: white;
+}
+
+.contactPage {
+    background-image: url(../images/1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: auto;
 }
 
 .contactanos {
@@ -366,7 +439,11 @@ footer {
 
     }
 
-    header {
+    .navcolor {
+        border-bottom: 2px solid black;
+    }
+
+    /* header {
         background-color: white;
 
         align-items: center;
@@ -375,7 +452,12 @@ footer {
         height: auto;
 
 
+    } */
+    .responsiveimg {
+        max-width: 7.5rem;
+        max-height: 7.5rem;
     }
+
 
     .grid {
         display: grid;
@@ -383,7 +465,25 @@ footer {
 
     }
 
-    nav ul {
+    .containerCards {
+        display: flex;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .cardInfo {
+        max-width: 20rem;
+        height: 25rem;
+        background-color: black;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* nav ul {
         position: relative;
         width: 100%;
         height: auto;
@@ -397,12 +497,12 @@ footer {
         margin-bottom: 0;
         gap: 200px;
 
-    }
+    } */
 
-    .checkbtn {
+    /* .checkbtn {
         display: none;
-    }
-
+    } */
+    /* 
     nav ul li {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -410,6 +510,7 @@ footer {
 
 
     }
+    
 
     nav ul li a {
         text-decoration: none;
@@ -418,102 +519,107 @@ footer {
 
 
 
-    }
+    } */
 
-    .iconsNav {
+    /* .iconsNav {
         position: relative;
         padding: 5px;
 
 
-    }
+    } */
 
     .mainImg {
-        
+
         width: 100%;
-        
+
         margin-right: 10rem;
         margin-bottom: 1rem;
+        margin-top: 2px;
     }
-    .mainImg img{
+
+    .mainImg img {
         height: 500px;
     }
-    .prodDest img{
-        width:368px ;
+
+    .prodDest img {
+        width: 368px;
         height: 433px;
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
     }
-    .productos{
+
+    .title {
+        margin-left: 7rem;
+    }
+
+    .productos {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap:4rem;
+        gap: 4rem;
         margin-left: 7rem;
         margin-right: 7rem;
         justify-items: center;
     }
-    .productos img{
-        width:368px ;
+
+    .productos img {
+        width: 368px;
         height: 433px;
-        margin-bottom:1rem;
+        margin-bottom: 1rem;
     }
-    .nosotros h2{
+    .nosotros{
+        margin-left: 20rem;
+        margin-right: 20rem;
+        padding-top: 10rem;
+    }
+    .nosotros h2 {
         grid-area: titulo;
         font-size: 4rem;
     }
-    .nosotros p{
+
+    .nosotros p {
         grid-area: info;
         font-size: 1.5rem;
     }
-    .nosotros .divisor{
+
+    .nosotros .divisor {
         grid-area: divisor;
     }
-    .nosotros img{
+
+    .nosotros img {
         grid-area: imagen;
     }
-    hr {
-        display: block;
-        height: 1px;
-        border: 0;
-        border-top: 1px solid #ccc;
-        margin: 1em 0;
-        padding: 0;
-        grid-area: divisor;
+
+
+    .divAbout {
+        height: 10px;
+        border-width: 0;
+        color: white;
+        background-color: white;
+        width: 50%;
+        margin: auto;
     }
-    .nosotros{
-        align-items:start;
-        margin-top: 5rem;
-        display: grid;
-        grid-template-areas: 
-        "titulo imagen"
-        "divisor imagen"
-        "info imagen";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 20% 10% 80%;
-        text-align: justify;
-        margin-left: 30rem;
-        margin-bottom: 1rem;
-        
-    }
-    .logoContacto{
+
+
+    .logoContacto {
         width: 30rem;
         height: 30rem;
         margin-left: 1rem;
-        
+
     }
+
     .subtitle {
         width: 100%;
         text-align: center;
         margin-top: 0;
         margin-bottom: 3rem;
         font-weight: bold;
-        font-size:x-large;
+        font-size: x-large;
     }
-    .flexInfo{
+
+    .flexInfo {
         margin-left: 10rem;
     }
+
+
+
 }
-
-
-
-
-

@@ -1,155 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../estilos/style.css">
+
     <script src="https://kit.fontawesome.com/5aa0dc6fd4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- Nav Bar -->
     <header class="header">
-        
-        <nav>
-            <div class="grid">
-                <img src="../images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="logo">
-            
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
 
-                <ul class="list">
-                    <div>
-                        <li class="hover">
-                            <a href="../index.html" class="active">Inicio</a>
+        <nav class="navcolor navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html"><img
+                        src="../images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt=""
+                        class="w-75 h-75 responsiveimg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="hover">
-                            <a href="./productos.html">Productos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
                         </li>
-                        <li class="hover">
-                            <a href="./nosotros.html">Nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
                         </li>
-                        <li class="hover">
-                            <a href="./contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
                         </li>
-                    </div>
-                    
-                    <div class="iconsNav"><li><span class="material-symbols-outlined">
-                        favorite
-                        </span></li>
+                    </ul>
+
+
+                    <div class="iconsNav">
                         <li><span class="material-symbols-outlined">
-                            shopping_cart
+                                favorite
                             </span></li>
                         <li><span class="material-symbols-outlined">
-                            account_circle
+                                shopping_cart
+                            </span></li>
+                        <li><span class="material-symbols-outlined">
+                                account_circle
                             </span></li>
                     </div>
-                    
-
-                </ul>
+                </div>
             </div>
-            
-            
         </nav>
-        <!-- <i class="fa-solid fa-heart fa-2xl"></i>
-        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
-        <i class="material-icons">account_box</i> -->
 
     </header>
 
     <h1 class="title" data-aos="fade-right" data-os-duration="3000">Productos</h1>
     <section class="productos">
-        
-            <div class="detalleprod" >
-                <img src="../images/productos/E6437_1.jpg" alt="Buzo Loyd Forro Polar Light Grey Melange">
-                <p>Loyd Forro Polar Light Grey Melange</p>
-                <p class="precio">$12000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0785_01_F4Nb488.jpg" alt="Buzo Pile Forro Polar Phantom">
-                <p>Pile Forro Polar Phantom</p>
-                <p class="precio">$15000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0786_01_OAnW47E.jpg" alt="Buzo Pile Forro Polar Olive Green">
-                <p>Pile Forro Polar Olive Green</p>
-                <p class="precio">$20000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0989_01_eqiXnC9.jpg" alt="Buzo Cozy II Polar con Capucha Paint Orange">
-                <p>Cozy II Polar con Capucha Paint Orange</p>
-                <p>$18000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0992_01_XvVW7aV.jpg" alt="Buzo Comfy Forro Polar Olive Green">
-                <p>Comfy Forro Polar Olive Green</p>
-                <p>$16000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0993_01_ttV5ufJ.jpg" alt="Buzo Comfy Forro Polar Paint Orange">
-                <p>Comfy Forro Polar Paint Orange</p>
-                <p>$22000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0994_01_yJALW2D.jpg" alt="Buzo Comfy Forro Polar Paint Burgundy">
-                <p>Comfy Forro Polar Paint Burgundy</p>
-                <p>$21000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            <div class="detalleprod">
-                <img src="../images/productos/F0996_01_IBidGwQ.jpg" alt="Comfy Pantalones Polares Black">
-                <p>Comfy Pantalones Polares Black</p>
-                <p>$8000</p>
-                <span class="material-symbols-outlined">
-                    add_shopping_cart
-                    </span>
-            </div>
-            
 
-        
+        <div class="detalleprod">
+            <img src="../images/productos/E6437_1.jpg" alt="Buzo Loyd Forro Polar Light Grey Melange">
+            <p>Loyd Forro Polar Light Grey Melange</p>
+            <p class="precio">$12000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0785_01_F4Nb488.jpg" alt="Buzo Pile Forro Polar Phantom">
+            <p>Pile Forro Polar Phantom</p>
+            <p class="precio">$15000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0786_01_OAnW47E.jpg" alt="Buzo Pile Forro Polar Olive Green">
+            <p>Pile Forro Polar Olive Green</p>
+            <p class="precio">$20000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0989_01_eqiXnC9.jpg" alt="Buzo Cozy II Polar con Capucha Paint Orange">
+            <p>Cozy II Polar con Capucha Paint Orange</p>
+            <p>$18000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0992_01_XvVW7aV.jpg" alt="Buzo Comfy Forro Polar Olive Green">
+            <p>Comfy Forro Polar Olive Green</p>
+            <p>$16000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0993_01_ttV5ufJ.jpg" alt="Buzo Comfy Forro Polar Paint Orange">
+            <p>Comfy Forro Polar Paint Orange</p>
+            <p>$22000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0994_01_yJALW2D.jpg" alt="Buzo Comfy Forro Polar Paint Burgundy">
+            <p>Comfy Forro Polar Paint Burgundy</p>
+            <p>$21000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+        <div class="detalleprod">
+            <img src="../images/productos/F0996_01_IBidGwQ.jpg" alt="Comfy Pantalones Polares Black">
+            <p>Comfy Pantalones Polares Black</p>
+            <p>$8000</p>
+            <span class="material-symbols-outlined">
+                add_shopping_cart
+            </span>
+        </div>
+
+
+
     </section>
-    
 
-<!-- Pie de Pagina -->
-<!-- Pie de Pagina -->
-    <footer>
+
+    <!-- Pie de Pagina -->
+    <!-- Pie de Pagina -->
+    <footer class="footer">
         <ul class="flexContainer">
-            <li>
-                <img src="../images/icons8-facebook.svg" alt="iconoFacebook" class="redes">
+            <li><a href="https://www.tiktok.com/@peaceicy" target="_blank">
+                <img src="../images/icons8-tik-tok-50.png" alt="iconoFacebook" class="redes">
+            </a>
+                
             </li>
             <li>
-                <img src="../images/icons8-instagram.svg" alt="iconoInstagram" class="redes">
+                <a href="https://www.instagram.com/peaceicyar/" target="_blank">
+                    <img src="../images/icons8-instagram.svg" alt="iconoInstagram" class="redes">
+                </a>
+                
             </li>
         </ul>
 
@@ -158,5 +168,9 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

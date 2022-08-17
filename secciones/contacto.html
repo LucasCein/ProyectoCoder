@@ -7,44 +7,48 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../estilos/style.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilos/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body data-aos="zoom-in">
     <!-- Nav Bar -->
-    <header class="header">
-        
-        <nav>
-            <div class="grid">
-                <img src="../images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="logo">
-            
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-
-                <ul class="list">
-                    <div>
-                        <li class="hover">
-                            <a href="../index.html" class="active">Inicio</a>
-                        </li>
-                        <li class="hover">
-                            <a href="./productos.html">Productos</a>
-                        </li>
-                        <li class="hover">
-                            <a href="./nosotros.html">Nosotros</a>
-                        </li>
-                        <li class="hover">
-                            <a href="./contacto.html">Contacto</a>
-                        </li>
-                    </div>
+    <header>
+        <nav class="navcolor navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="../index.html"><img src="../images/WhatsApp Image 2022-07-15 at 9.59.04 PM (1).jpeg" alt="" class="w-75 h-75 responsiveimg"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
                     
-                    <div class="iconsNav"><li><span class="material-symbols-outlined">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    
+                    
+                    <div class="iconsNav">
+                        <li><span class="material-symbols-outlined">
                         favorite
                         </span></li>
                         <li><span class="material-symbols-outlined">
@@ -54,20 +58,14 @@
                             account_circle
                             </span></li>
                     </div>
-                    
-
-                </ul>
+                </div>
             </div>
-            
-            
         </nav>
-    
-
     </header>
 
 	<!-- Cuerpo Pag -->
 
-    <section class="contactanos">
+    <!-- <section class="contactanos">
 		<h1 data-aos="fade-right" data-os-duration="3000">
 			Contactanos
 		</h1>
@@ -97,17 +95,63 @@
 				<input type="submit" value="Enviar">
 			</form>
 		</article>
-	</section>
+	</section> -->
+    <div class="contactPage" >
+        <div class="container py-2 min-vh-100 d-flex flex-column">
+            <div class="card shadow rounded-3 my-auto">
+                <div class="card-header p-3 h4">
+                    Contactanos
+                </div>
+                <div class="card-body p-4">
+                    <form role="form" class="row">
+                        <div class="form-group col-lg-4">
+                            <label class="form-control-label" for="form-group-input">Nombre</label>
+                            <input type="text" class="form-control" id="form-group-input" name="name">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label class="form-control-label" for="form-group-input">Email</label>
+                            <input type="text" class="form-control" id="form-group-input" name="email">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label class="form-control-label" for="form-group-input">Motivo</label>
+                            <select size="0" class="form-control" name="reason">
+                                <option value="">Elige un motivo</option>
+                                <option value="1">Devolucion o Cambio</option>
+                                <option value="2">Envios</option>
+                                <option value="3">Reclamos</option>
+                                <option value="4">Otro motivo</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <label class="form-control-label" for="form-group-input">Observaciones</label>
+                            <textarea class="form-control" id="form-group-input" name="notes" rows="6"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <button class="btn btn-warning float-end mt-2" for="form-group-input">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
 
 
 <!-- Pie de Pagina -->
-<footer>
+<footer class="footer">
     <ul class="flexContainer">
-        <li>
-            <img src="../images/icons8-facebook.svg" alt="iconoFacebook" class="redes">
+        <li><a href="https://www.tiktok.com/@peaceicy" target="_blank">
+            <img src="../images/icons8-tik-tok-50.png" alt="iconoFacebook" class="redes">
+        </a>
+            
         </li>
         <li>
-            <img src="../images/icons8-instagram.svg" alt="iconoInstagram" class="redes">
+            <a href="https://www.instagram.com/peaceicyar/" target="_blank">
+                <img src="../images/icons8-instagram.svg" alt="iconoInstagram" class="redes">
+            </a>
+            
         </li>
     </ul>
 
@@ -116,5 +160,8 @@
 <script>
     AOS.init();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 </body>
 </html>
