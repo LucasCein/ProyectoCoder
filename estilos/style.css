@@ -178,12 +178,13 @@ nav ul li a:hover {
 .mainImg {
     display: flex;
     justify-content: center;
+    
 
 }
 
 .mainImg img {
     width: 100%;
-    min-height: 700px;
+    max-height: 300px;
 
 }
 
@@ -538,7 +539,7 @@ footer {
     }
 
     .mainImg img {
-        height: 500px;
+        min-height: 800px;
     }
 
     .prodDest img {
