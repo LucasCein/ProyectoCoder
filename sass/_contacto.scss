@@ -1,0 +1,27 @@
+.contactPage {
+    background-image: url(../images/1.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: auto;
+}
+
+.contactanos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    height: 15rem;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    h1 {
+        font-size: 2rem;
+    }
+    article {
+        font-size: 1rem;
+    }
+}

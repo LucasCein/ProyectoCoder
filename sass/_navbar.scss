@@ -1,0 +1,45 @@
+nav ul li a:hover {
+    font-weight: bold;
+    color: gray;
+}
+.responsiveimg {
+    max-width: 4rem;
+    max-height: 4rem;
+    @media(min-width:1024px){
+        max-width: 7.5rem;
+        max-height: 7.5rem;
+    }
+}
+.navcolor {
+    background-color: $white;
+    min-height: 5rem;
+    @media(min-width:1024px){
+        border-bottom: 2px solid black;
+    }
+}
+
+.iconsNav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 48
+}
+.logo{
+    @media(min-width:1024px){
+        max-width: 6rem;
+        max-height: 6rem;
+        margin-left: 10rem;
+        margin-bottom: 0;
+        margin-top: 1rem;
+        float: left;
+
+    }
+}

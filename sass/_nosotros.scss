@@ -1,0 +1,92 @@
+.aboutUsPage {
+    background-image: url(../images/DSCN0240.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: auto;
+}
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2 {
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: rem;
+        color: $white;
+        @media(min-width:1024px){
+            grid-area: titulo;
+            font-size: 4rem;
+        }
+    }
+    p {
+        font-size: 1rem;
+        text-align: center;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        margin-bottom: 4rem;
+        color: $white;
+        @media(min-width:1024px){
+            grid-area: info;
+            font-size: 1.5rem;
+        }
+    }
+    @media(min-width:1024px){
+        margin-left: 20rem;
+        margin-right: 20rem;
+        padding-top: 10rem;
+    }
+}
+
+.subtitle {
+    width: 100%;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: $white;
+    @media(min-width:1024px){
+        width: 100%;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        font-weight: bold;
+        font-size: x-large;
+    }
+}
+
+.infoNosotros {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+.flexInfo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-left: 3rem;
+    p {
+        margin-bottom: 0;
+        margin-left: 50px;
+        font-weight: bold;
+        margin-right: 5rem;
+        color: $white;
+    }
+    @media(min-width:1024px){
+        margin-left: 10rem;
+    }
+}
+.divAbout{
+    @media(min-width:1024px){
+        height: 10px;
+        border-width: 0;
+        color: $white;
+        background-color: $white;
+        width: 50%;
+        margin: auto;
+    }
+}
