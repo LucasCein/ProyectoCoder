@@ -22,26 +22,18 @@
 
 
 .cardInfo {
+    @include card;
     max-width: 10rem;
     height: 15rem;
-    background-color: black;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     img {
         width: 140px;
         height: 130px;
         margin-bottom: 2rem;
     }
     @media(min-width:1024px){
+        @include card;
         max-width: 20rem;
         height: 25rem;
-        background-color: black;
-        border-radius: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 }
@@ -54,8 +46,7 @@
 }
 
 .cardInfo .titleCard {
-    color: $white;
-    font-weight: bold;
+    @extend .descCard;
     font-size: small;
 }
 

@@ -8,11 +8,11 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+@import "variables";
+@import "mixing";
 @import "index";
 @import "producto";
 @import "nosotros";
 @import "contacto";
 @import "navbar";
 @import "footer";
-@import "variables";
