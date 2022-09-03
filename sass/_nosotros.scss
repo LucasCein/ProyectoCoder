@@ -1,10 +1,11 @@
 .aboutUsPage {
-    background-image: url(../images/DSCN0240.JPG);
+    background-image: url(../images/mainImg/DSCN0240-min.JPG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     width: auto;
     height: auto;
+    
 }
 .nosotros {
     display: flex;
@@ -61,7 +62,7 @@
 
 .infoNosotros {
     list-style-type: none;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .flexInfo {
@@ -89,4 +90,11 @@
         width: 50%;
         margin: auto;
     }
+}
+
+.faqTitle{
+    margin: auto;
+    color: black;
+    text-align: center;
+    margin-top: 2rem;
 }

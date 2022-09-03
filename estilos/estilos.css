@@ -223,7 +223,7 @@ body {
 }
 
 .aboutUsPage {
-  background-image: url(../images/DSCN0240.JPG);
+  background-image: url(../images/mainImg/DSCN0240-min.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -294,7 +294,7 @@ body {
 
 .infoNosotros {
   list-style-type: none;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .flexInfo {
@@ -327,8 +327,15 @@ body {
   }
 }
 
+.faqTitle {
+  margin: auto;
+  color: black;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .contactPage {
-  background-image: url(../images/1.JPG);
+  background-image: url(../images/mainImg/1-min.JPG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -412,13 +419,13 @@ footer {
 
 .flexContainer {
   display: flex;
-  height: 50px;
   align-items: center;
   list-style-type: none;
   justify-content: center;
 }
 .flexContainer li {
   padding: 2rem;
+  height: 30px;
 }
 .flexContainer ul {
   width: 100%;
@@ -427,4 +434,23 @@ footer {
 .redes {
   max-width: 30px;
   max-height: 30px;
+}
+
+.gridFooter {
+  display: grid;
+  height: 50px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.footerSecciones ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerSecciones ul a {
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
 }/*# sourceMappingURL=estilos.css.map */
