@@ -40,6 +40,11 @@ footer {
         text-decoration: none;
         color: black;
         padding: 1rem;
+        font-size: x-small;
     }
-    
+    @media(min-width:1024px){
+        a{
+            font-size: medium;
+        }
+    }
 }
