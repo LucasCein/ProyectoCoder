@@ -70,6 +70,7 @@ body {
 }
 
 .mainImg {
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -79,22 +80,13 @@ body {
 }
 @media (min-width: 768px) {
   .mainImg img {
-    width: 100%;
-    height: 500px;
+    min-height: 500px;
     margin-top: 0;
   }
 }
 @media (min-width: 1024px) {
   .mainImg img {
     min-height: 800px;
-  }
-}
-@media (min-width: 1024px) {
-  .mainImg {
-    width: 100%;
-    margin-right: 10rem;
-    margin-bottom: 1rem;
-    margin-top: 2px;
   }
 }
 
@@ -109,7 +101,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  gap: 2rem;
+  gap: 1rem;
   justify-items: center;
 }
 .prodDest img {
@@ -121,14 +113,12 @@ body {
   .prodDest img {
     width: 200px;
     height: 250px;
-    margin-bottom: 1rem;
   }
 }
 @media (min-width: 1024px) {
   .prodDest img {
-    width: 368px;
-    height: 433px;
-    margin-bottom: 1rem;
+    width: 200px;
+    height: 300px;
   }
 }
 @media (min-width: 768px) {
@@ -166,10 +156,10 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
   justify-items: center;
+  width: 100%;
 }
 .productos img {
   width: 168px;
@@ -178,9 +168,8 @@ body {
 }
 @media (min-width: 1024px) {
   .productos img {
-    width: 368px;
-    height: 433px;
-    margin-bottom: 1rem;
+    width: 200px;
+    height: 300px;
   }
 }
 @media (min-width: 768px) {
@@ -189,8 +178,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1rem;
-    margin-left: 5px;
-    margin-right: 5px;
     justify-items: center;
   }
 }
@@ -199,9 +186,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 4rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
     justify-items: center;
   }
 }
@@ -335,6 +319,69 @@ body {
   margin-top: 2rem;
 }
 
+.faq {
+  max-width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.faq summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+.faq details[open] summary ~ * {
+  -webkit-animation: sweep 0.5s ease-in-out;
+          animation: sweep 0.5s ease-in-out;
+}
+@-webkit-keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+.faq details > summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+.faq details[open] > summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+.faq details > summary::-webkit-details-marker {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .faq {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
 .contactPage {
   background-image: url(../images/mainImg/1-min.JPG);
   background-size: cover;
@@ -382,6 +429,7 @@ nav ul li a:hover {
 .navcolor {
   background-color: white;
   min-height: 5rem;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   .navcolor {
@@ -456,8 +504,33 @@ footer {
   padding: 1rem;
   font-size: x-small;
 }
+.footerSecciones ul a:hover {
+  font-weight: bold;
+}
 @media (min-width: 1024px) {
   .footerSecciones ul a {
     font-size: medium;
   }
+}
+
+.wpp .whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 100px;
+  right: 40px;
+  background-color: black;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 13px;
+}
+
+.whatsapp:hover {
+  color: white;
 }/*# sourceMappingURL=estilos.css.map */

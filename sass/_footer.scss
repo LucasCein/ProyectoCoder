@@ -41,10 +41,14 @@ footer {
         color: black;
         padding: 1rem;
         font-size: x-small;
+        &:hover{
+            font-weight: bold;
+        }
     }
     @media(min-width:1024px){
         a{
             font-size: medium;
         }
     }
+    
 }
