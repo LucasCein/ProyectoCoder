@@ -62,7 +62,7 @@
                             <li><span class="material-symbols-outlined">
                             favorite
                             </span></li>
-                            <li><span class="material-symbols-outlined">
+                            <li><span class="material-symbols-outlined" id="btnCarrito">
                                 shopping_cart
                                 </span></li>
                             <li><span class="material-symbols-outlined">
@@ -137,7 +137,21 @@
         <section class="wpp">
             <a href="https://wa.me/543875145361?text=Hola%20,estoy%20interesado%20en%20sus%20productos" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
         </section>
-
+        <div class="modal-contenedor">
+            <div class="modal-carrito">
+                <h3>Carrito</h3>
+                <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+                <div id="carrito-contenedor">
+                    <!-- <div class="productoEnCarrito">
+                        <p>Buzo 1</p>
+                        <p>Precio: $1200</p>
+                        <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                    </div> -->
+                </div>
+                <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+                <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+            </div>
+        </div>
 
 
         <!-- Pie de Pagina -->
@@ -194,6 +208,7 @@
             <script>
                 AOS.init();
             </script>
+        <script src="./assets/carrito.js"></script>
     </body>
 </div>
 

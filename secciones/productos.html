@@ -62,7 +62,7 @@
                         <li><span class="material-symbols-outlined">
                                 favorite
                             </span></li>
-                        <li><span class="material-symbols-outlined">
+                        <li><span class="material-symbols-outlined" id="btnCarrito">
                                 shopping_cart
                             </span></li>
                         <li><span class="material-symbols-outlined">
@@ -76,80 +76,27 @@
     </header>
 
     <h1 class="title" data-aos="fade-right" data-os-duration="3000">Productos</h1>
-    <section class="productos">
+    <section class="productos" id="productos">
 
-        <div class="detalleprod">
-            <img src="../images/productImg/E6437_1-min.jpg" alt="Buzo Loyd Forro Polar Light Grey Melange">
-            <p>Loyd Forro Polar Light Grey Melange</p>
-            <p class="precio">$12000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0785_01_F4Nb488-min.jpg" alt="Buzo Pile Forro Polar Phantom">
-            <p>Pile Forro Polar Phantom</p>
-            <p class="precio">$15000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0786_01_OAnW47E-min.jpg" alt="Buzo Pile Forro Polar Olive Green">
-            <p>Pile Forro Polar Olive Green</p>
-            <p class="precio">$20000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0989_01_eqiXnC9-min.jpg" alt="Buzo Cozy II Polar con Capucha Paint Orange">
-            <p>Cozy II Polar con Capucha Paint Orange</p>
-            <p>$18000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0992_01_XvVW7aV-min.jpg" alt="Buzo Comfy Forro Polar Olive Green">
-            <p>Comfy Forro Polar Olive Green</p>
-            <p>$16000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0993_01_ttV5ufJ-min.jpg" alt="Buzo Comfy Forro Polar Paint Orange">
-            <p>Comfy Forro Polar Paint Orange</p>
-            <p>$22000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0994_01_yJALW2D-min.jpg" alt="Buzo Comfy Forro Polar Paint Burgundy">
-            <p>Comfy Forro Polar Paint Burgundy</p>
-            <p>$21000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <div class="detalleprod">
-            <img src="../images/productImg/F0996_01_IBidGwQ-min.jpg" alt="Comfy Pantalones Polares Black">
-            <p>Comfy Pantalones Polares Black</p>
-            <p>$8000</p>
-            <span class="material-symbols-outlined">
-                add_shopping_cart
-            </span>
-        </div>
-        <section class="wpp">
-            <a href="https://wa.me/543875145361?text=Hola%20,estoy%20interesado%20en%20sus%20productos" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-        </section>
         
 
     </section>
 
-
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h3>Carrito</h3>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor">
+                <!-- <div class="productoEnCarrito">
+                    <p>Buzo 1</p>
+                    <p>Precio: $1200</p>
+                    <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+                </div> -->
+            </div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+        </div>
+    </div>
     <!-- Pie de Pagina -->
     <!-- Pie de Pagina -->
     <footer class="footer">
@@ -204,6 +151,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="../assets/main.js"></script>
+    <script src="../assets/carrito.js"></script>
 </body>
 
 </html>
