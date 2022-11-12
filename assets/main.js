@@ -1,78 +1,45 @@
+
 let prodSeleccionados = []
 let container = document.getElementById('carrito-contenedor')
 container.innerHTML = ""
+let productos1=[]
 let buttondelcarrito = []
 let precioTotal = 0
-let productos = [
-    {
-        "_id": "635824538e0dc5da8f902a03",
-        "price": "2824",
-        "picture": "../images/productImg/E6437_1-min.jpg",
-        "cantidad": "1",
-        "Title": "Loyd Forro Polar Light Grey Melange"
-    },
-    {
-        "_id": "63582453bc409c62ee01fb71",
-        "price": "3654",
-        "picture": "../images/productImg/F0785_01_F4Nb488-min.jpg",
-        "cantidad": "1",
-        "Title": "Pile Forro Polar Phantom"
-    },
-    {
-        "_id": "63582453e7ba33c3e19115ac",
-        "price": "1676",
-        "picture": "../images/productImg/F0786_01_OAnW47E-min.jpg",
-        "cantidad": "1",
-        "Title": "Pile Forro Polar Olive Green"
-    },
-    {
-        "_id": "63582453377428902479a090",
-        "price": "2174",
-        "picture": "../images/productImg/F0989_01_eqiXnC9-min.jpg",
-        "cantidad": "1",
-        "Title": "Cozy II Polar con Capucha Paint Orange"
-    },
-    {
-        "_id": "63582453d72645b5a6e3b0ab",
-        "price": "3860",
-        "picture": "../images/productImg/F0989_01_eqiXnC9-min.jpg",
-        "cantidad": "1",
-        "Title": "Comfy Forro Polar Olive Green"
-    },
-    {
-        "_id": "635824533214e22713e2e21c",
-        "price": "2229",
-        "picture": "../images/productImg/F0993_01_ttV5ufJ-min.jpg",
-        "cantidad": "1",
-        "Title": "Comfy Forro Polar Paint Orange"
-    },
-    {
-        "_id": "635824536759df524bf87dfe",
-        "price": "3499",
-        "picture": "../images/productImg/F0994_01_yJALW2D-min.jpg",
-        "cantidad": "1",
-        "Title": "Comfy Forro Polar Paint Burgundy"
-    },
-    {
-        "_id": "63582453fd162b0bc0f69b85",
-        "price": "1072",
-        "picture": "../images/productImg/F0996_01_IBidGwQ-min.jpg",
-        "cantidad": "1",
-        "Title": "Comfy Pantalones Polares Black"
+const cargaprods= async()=>{
+    try{
+        const response=await fetch('http://127.0.0.1:5500/assets/bdd.json')
+        if(!response.ok){
+            throw new Error('HTTP error! status:'+response.status)
+        }
+
+        const data=await response.json()
+        const {productos}=data
+        productos1=productos
+        console.log(productos1)
+        agregarProductos()
+    } catch(error){
+        console.log('error')
     }
-]
+}
 //Agregar productos apenas carga la pagina
 let agregarProductos = () => {
     let prod = document.getElementById('productos')
-    productos.forEach((elemento) => {
-        prod.innerHTML += `<div class="detalleprod" id="cards">
-        <img src="${elemento.picture}" alt="${elemento.Title}">
-        <p>${elemento.Title}</p>
-        <p class="precio">${elemento.price}</p>
-        <span class="material-symbols-outlined" id="${elemento._id}">
-            add_shopping_cart
-        </span>
-        </div>`
+    productos1.forEach((elemento) => {
+        if(elemento!==null){
+            prod.innerHTML += `<div class="detalleprod" id="cards">
+            <img src="${elemento.picture}" alt="${elemento.Title}">
+            <p>${elemento.Title}</p>
+            <p class="precio">${elemento.price}</p>
+            <section class="productIcons">
+            <span class="material-symbols-outlined carrito" id="${elemento._id}">
+                add_shopping_cart
+            </span>
+            <span class="material-symbols-outlined fav" id="${elemento._id}">favorite
+            </span>
+            </section>
+            </div>`
+        }
+        
 
     })
     prod.innerHTML += `<section class="wpp">
@@ -97,14 +64,16 @@ let agregarAlCarrito = (aux) => {
             // precioTotal += parseInt(element.price)
             precioFinal()
         })
+        
     }
 
 
 }
+
 //encontrar curso seleccionado para agregarlo al carrito
 let buscarCurso = (id) => {
     let selec = []
-    let prodSelec = productos.find(element => id == element._id)
+    let prodSelec = productos1.find(element => id == element._id)
     selec.push(prodSelec)
     prodSeleccionados.push(prodSelec)
     if (prodSelec.length > 1) {
@@ -164,18 +133,20 @@ let sincronizarConLS = () => {
 }
 //main
 document.addEventListener("DOMContentLoaded", () => {
+    cargaprods()
     prodSeleccionados = JSON.parse(localStorage.getItem("productos")) || []
     agregarAlCarrito(prodSeleccionados)
     agregarProductos()
-    let buttoncard = document.querySelectorAll("#cards span")
+    let buttoncard = document.querySelectorAll("#cards .carrito")
     buttoncard.forEach(element => {
         element.addEventListener("click", (event) => {
             event.preventDefault()
             let id = event.target.id
             buscarCurso(id)
-
+            
         })
     })
+    console.log(buttoncard)
 
 
 })

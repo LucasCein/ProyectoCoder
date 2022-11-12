@@ -1,0 +1,62 @@
+{
+    "productos":[
+        {
+            "_id": "635824538e0dc5da8f902a03",
+            "price": "2824",
+            "picture": "../images/productImg/E6437_1-min.jpg",
+            "cantidad": "1",
+            "Title": "Loyd Forro Polar Light Grey Melange"
+        },
+        {
+            "_id": "63582453bc409c62ee01fb71",
+            "price": "3654",
+            "picture": "../images/productImg/F0785_01_F4Nb488-min.jpg",
+            "cantidad": "1",
+            "Title": "Pile Forro Polar Phantom"
+        },
+        {
+            "_id": "63582453e7ba33c3e19115ac",
+            "price": "1676",
+            "picture": "../images/productImg/F0786_01_OAnW47E-min.jpg",
+            "cantidad": "1",
+            "Title": "Pile Forro Polar Olive Green"
+        },
+        {
+            "_id": "63582453377428902479a090",
+            "price": "2174",
+            "picture": "../images/productImg/F0989_01_eqiXnC9-min.jpg",
+            "cantidad": "1",
+            "Title": "Cozy II Polar con Capucha Paint Orange"
+        },
+        {
+            "_id": "63582453d72645b5a6e3b0ab",
+            "price": "3860",
+            "picture": "../images/productImg/F0989_01_eqiXnC9-min.jpg",
+            "cantidad": "1",
+            "Title": "Comfy Forro Polar Olive Green"
+        },
+        {
+            "_id": "635824533214e22713e2e21c",
+            "price": "2229",
+            "picture": "../images/productImg/F0993_01_ttV5ufJ-min.jpg",
+            "cantidad": "1",
+            "Title": "Comfy Forro Polar Paint Orange"
+        },
+        {
+            "_id": "635824536759df524bf87dfe",
+            "price": "3499",
+            "picture": "../images/productImg/F0994_01_yJALW2D-min.jpg",
+            "cantidad": "1",
+            "Title": "Comfy Forro Polar Paint Burgundy"
+        },
+        {
+            "_id": "63582453fd162b0bc0f69b85",
+            "price": "1072",
+            "picture": "../images/productImg/F0996_01_IBidGwQ-min.jpg",
+            "cantidad": "1",
+            "Title": "Comfy Pantalones Polares Black"
+        }
+    ]
+    
+    
+}
