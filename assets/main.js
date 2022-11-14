@@ -15,14 +15,13 @@ const cargaprods= async()=>{
         const data=await response.json()
         const {productos}=data
         productos1=productos
-        console.log(productos1)
-        agregarProductos()
+        await agregarProductos()
     } catch(error){
         console.log('error')
     }
 }
 //Agregar productos apenas carga la pagina
-let agregarProductos = () => {
+let agregarProductos = async() => {
     let prod = document.getElementById('productos')
     productos1.forEach((elemento) => {
         if(elemento!==null){
@@ -30,13 +29,9 @@ let agregarProductos = () => {
             <img src="${elemento.picture}" alt="${elemento.Title}">
             <p>${elemento.Title}</p>
             <p class="precio">${elemento.price}</p>
-            <section class="productIcons">
             <span class="material-symbols-outlined carrito" id="${elemento._id}">
                 add_shopping_cart
             </span>
-            <span class="material-symbols-outlined fav" id="${elemento._id}">favorite
-            </span>
-            </section>
             </div>`
         }
         
@@ -132,21 +127,35 @@ let sincronizarConLS = () => {
     localStorage.setItem("productos", JSON.stringify(prodSeleccionados))
 }
 //main
-document.addEventListener("DOMContentLoaded", () => {
-    cargaprods()
+document.addEventListener("DOMContentLoaded", async () => {
+    await cargaprods()
     prodSeleccionados = JSON.parse(localStorage.getItem("productos")) || []
     agregarAlCarrito(prodSeleccionados)
-    agregarProductos()
-    let buttoncard = document.querySelectorAll("#cards .carrito")
+    // agregarProductos()
+    let buttoncard= document.querySelectorAll('.carrito')
     buttoncard.forEach(element => {
         element.addEventListener("click", (event) => {
             event.preventDefault()
             let id = event.target.id
             buscarCurso(id)
-            
+            Toastify({
+                text: "Se ha agregado al carrito!",
+                duration: 1500,
+                destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                close: true,
+                gravity: "top", 
+                position: "right", 
+                stopOnFocus: true, 
+                style: {
+                  background: "black",
+                },
+                onClick: function(){} 
+              }).showToast();
         })
     })
-    console.log(buttoncard)
+    
+   
 
 
 })
